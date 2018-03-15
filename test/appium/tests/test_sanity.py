@@ -68,7 +68,7 @@ class TestSanity(SingleDeviceTestCase):
         sign_in_view.create_user()
         home_view = sign_in_view.get_home_view()
         start_new_chat_view = home_view.plus_button.click()
-        start_new_chat_view.add_new_contact.click()
+        start_new_chat_view.start_new_chat_button.click()
         contact_jarrad = home_view.element_by_text('Jarrad', 'button')
         contact_jarrad.scroll_to_element()
         contact_jarrad.click()

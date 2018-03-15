@@ -71,7 +71,7 @@ class HomeView(BaseView):
 
     def add_contact(self, public_key):
         start_new_chat = self.plus_button.click()
-        start_new_chat.add_new_contact.click()
+        start_new_chat.start_new_chat_button.click()
         start_new_chat.public_key_edit_box.send_keys(public_key)
         start_new_chat.confirm()
 
